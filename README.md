@@ -2,94 +2,67 @@
 
 ## Project Overview
 
-This project is a College FAQ Chatbot developed using Python, Natural Language Processing (NLP), Machine Learning, and Streamlit.
+The College FAQ Chatbot is a machine learning-based chatbot developed using Python, Natural Language Processing (NLP), Scikit-learn, and Streamlit.
 
-The chatbot is designed to answer frequently asked questions related to college courses, fees, admission, contact details, location, timings, placements, and hostel facilities.
+The chatbot is designed to answer frequently asked questions related to a college. It identifies the category of a user's question and provides a relevant predefined response.
 
-The chatbot uses TF-IDF to convert user questions into numerical features and Logistic Regression to classify the question into the appropriate category.
+The project demonstrates the use of text classification, TF-IDF vectorization, Logistic Regression, and Streamlit to build an interactive chatbot application.
+
+## Objectives
+
+- To develop a simple FAQ chatbot using Machine Learning.
+- To classify user questions into predefined categories.
+- To use NLP techniques for processing text-based questions.
+- To provide relevant responses to common college-related questions.
+- To create an interactive chatbot interface using Streamlit.
 
 ## Features
 
-- Answers common college-related questions
-- Uses Natural Language Processing
-- Classifies questions into different categories
-- Provides responses based on the predicted category
-- Interactive web interface using Streamlit
-- Maintains chat history during the session
-
-## Technologies Used
-
-- Python
-- Pandas
-- Scikit-learn
-- TF-IDF Vectorization
-- Logistic Regression
-- Streamlit
+- Interactive chatbot interface
+- Natural Language Processing-based question classification
+- TF-IDF text vectorization
+- Logistic Regression classification
+- Predefined responses for different FAQ categories
+- Chat history during the session
+- Simple and user-friendly Streamlit interface
 
 ## FAQ Categories
 
-The chatbot currently supports the following topics:
+The chatbot currently supports the following categories:
 
-- Courses
-- Fees
-- Admission
-- Contact
-- Location
-- Timings
-- Placements
-- Hostel
+- 🎓 Courses
+- 💰 Fees
+- 📝 Admission
+- 📞 Contact
+- 📍 Location
+- 🕐 Timings
+- 💼 Placements
+- 🏠 Hostel
 
-## Machine Learning Approach
+## Technologies Used
 
-### 1. Data Preparation
+- **Programming Language:** Python
+- **Data Handling:** Pandas
+- **Natural Language Processing:** TF-IDF Vectorization
+- **Machine Learning:** Logistic Regression
+- **Machine Learning Library:** Scikit-learn
+- **Web Framework:** Streamlit
 
-A dataset containing sample questions and their corresponding categories is created.
+## Machine Learning Workflow
 
-### 2. Text Vectorization
+The chatbot follows the workflow below:
 
-TF-IDF (Term Frequency-Inverse Document Frequency) is used to convert text questions into numerical features.
-
-### 3. Classification
-
-Logistic Regression is used to classify the user's question into the appropriate FAQ category.
-
-### 4. Response Generation
-
-After predicting the category, the chatbot provides the corresponding response.
-
-## Project Workflow
-
-User Question  
-↓  
-Text Preprocessing  
-↓  
-TF-IDF Vectorization  
-↓  
-Logistic Regression  
-↓  
-Intent/Category Prediction  
-↓  
-Relevant Answer  
-↓  
-Streamlit Chat Interface
-
-## Example Questions
-
-**User:** What courses do you offer?
-
-**Chatbot:** We offer various undergraduate and postgraduate programs. Please check the college course list for complete details.
-
-**User:** Is placement available?
-
-**Chatbot:** The college provides placement opportunities for eligible students. Please contact the placement cell for detailed information.
-
-**User:** Is hostel available?
-
-**Chatbot:** Hostel facilities may be available for students. Please contact the college administration for hostel availability and fees.
-
-## How to Run the Project
-
-### Step 1: Clone the Repository
-
-```bash
-git clone <your-github-repository-link>
+```text
+User Question
+      ↓
+Text Input
+      ↓
+TF-IDF Vectorization
+      ↓
+Logistic Regression
+      ↓
+Question Category Prediction
+      ↓
+Predefined Response
+      ↓
+Chatbot Output
